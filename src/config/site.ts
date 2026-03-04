@@ -9,10 +9,10 @@
  */
 const siteConfig = {
     /** WhatsApp / call number — digits only, with country code */
-    PHONE_NUMBER: "918127775550",
+    PHONE_NUMBER: "8574455048",
 
     /** Display-friendly version shown in the UI */
-    PHONE_DISPLAY: "+91 8127775550",
+    PHONE_DISPLAY: "+91 8574455048",
 
     /** Business city / service area */
     CITY: "Lucknow",
