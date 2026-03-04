@@ -70,8 +70,9 @@ const acData: ACCard[] = [
         name: "1.5 Ton Window AC",
         subtitle: "Classic Cooling",
         price: "₹799",
-        imageSrc: "/images/window_ac_1.png",
-        imageAlt: "1.5 ton window AC installed in a room window",
+        imageSrc:
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuD0__SZXakyJjz-HMuNnilgo3I6vZhwqmldly3DvvCWk6DdvWC9njxB5wQs5URkqui2k1pN55HgV23CvMNccAAy7N8NHDX0kBNIuACjhCARCA-TvDXKkkggNS7szniKNY_pjFkqUH0jsF-jrV33hfLD6jnhbrKY_oiwPuqJsWKgsG-XPwQmIsEum5jvudS9nXZafn6OxcVoBCnjzBOFlhTWoXThosibpJFFBCzJd2OehME-WSMEjzds-G0BOrGqvcvBx-U5sQwbGEg",
+        imageAlt: "1.5 ton window AC unit",
         specs: [
             { icon: "ac_unit", label: "1.5 Ton" },
             { icon: "star", label: "3 Star Rating" },
@@ -84,8 +85,9 @@ const acData: ACCard[] = [
         name: "1 Ton Window AC",
         subtitle: "Compact & Affordable",
         price: "₹699",
-        imageSrc: "/images/window_ac_2.png",
-        imageAlt: "Compact 1 ton window AC in a bedroom",
+        imageSrc:
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuBpspH7OVaN1RyRXv4a5TPjUWAHPtcCRtyx269vtlpaCoyEIBIetOREwmb1bwNgXWcGwDc5jvICsnaetQHwBGUl2cXrfqg_DVB6yzS8ZII63uWJnOS7_ZPmWqP5Sspwri2U2zFL0gPveV6GWEs6BvIroTWVkqkny0_S0TmKUfTYqUeNk8uWcucsWVxHWap5K5tl9S572GYjAu32kiJ2faVFrUxnvXwckrFCN_u5P1bCNDVlYoDmkVi9k355FbwkGDqnm2LtHS2V4Io",
+        imageAlt: "1 ton window AC unit",
         specs: [
             { icon: "ac_unit", label: "1.0 Ton" },
             { icon: "star", label: "2 Star Rating" },
@@ -98,8 +100,9 @@ const acData: ACCard[] = [
         name: "2 Ton Window AC",
         subtitle: "High Capacity",
         price: "₹1,099",
-        imageSrc: "/images/window_ac_3.png",
-        imageAlt: "Large 2 ton window AC in a spacious living room",
+        imageSrc:
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuCruNflFlbh2AaEUlRIQtEwYrgEuFQz20DC9HhwuwAzbmP6FkzuCJGt6-fCwAL-jN6N0cn0RCNA7WP67QyyiXa90Oe_titgZrwqpxyhN3PIpUB4OqIXhO7URZ-5MXXgyggV8r6rjKUSKXQNcSoTrkcrgEGPL-rPYCgUtEOloeuXcEJUdoQRnfy73DMmYdIGKTZ3bWtpH_p6u5HH55SsUn61G_LPrj6T-YG6IqqxWloKn4TBl5qCG9qYT9K_jqG1c81731MU8f5e51Q",
+        imageAlt: "2 ton window AC unit",
         specs: [
             { icon: "ac_unit", label: "2.0 Ton" },
             { icon: "star", label: "3 Star Rating" },
@@ -132,8 +135,8 @@ export default function ACListings() {
                                 key={t}
                                 onClick={() => setTab(t)}
                                 className={`px-4 py-2 rounded-lg text-sm font-bold transition-colors ${tab === t
-                                        ? "bg-[color:var(--color-primary)] text-white"
-                                        : "bg-slate-200 text-slate-700 hover:bg-slate-300"
+                                    ? "bg-[color:var(--color-primary)] text-white"
+                                    : "bg-slate-200 text-slate-700 hover:bg-slate-300"
                                     }`}
                             >
                                 {t === "split" ? "Split ACs" : "Window ACs"}
