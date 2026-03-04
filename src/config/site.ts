@@ -12,7 +12,7 @@ const siteConfig = {
     PHONE_NUMBER: "8574455048",
 
     /** Display-friendly version shown in the UI */
-    PHONE_DISPLAY: "+91 8574455048",
+    PHONE_DISPLAY: "8574455048",
 
     /** Business city / service area */
     CITY: "Lucknow",
@@ -27,7 +27,7 @@ const siteConfig = {
     },
 
     /** tel: link for direct dialling */
-    telLink: () => `tel:+${siteConfig.PHONE_NUMBER}`,
+    telLink: () => `tel:${siteConfig.PHONE_NUMBER}`,
 };
 
 export default siteConfig;
