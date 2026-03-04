@@ -1,9 +1,12 @@
 import type { NextConfig } from "next";
 
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
+
 const nextConfig: NextConfig = {
   output: "export",           // static export → generates /out folder
-  basePath: "/coolrent-ac",   // must match your GitHub repo name
-  assetPrefix: "/coolrent-ac/",
+  // Only set basePath and assetPrefix when building on GitHub Actions
+  basePath: isGithubActions ? "/coolrent-ac" : "",
+  assetPrefix: isGithubActions ? "/coolrent-ac/" : "",
   images: {
     unoptimized: true,        // required for static export
     remotePatterns: [
