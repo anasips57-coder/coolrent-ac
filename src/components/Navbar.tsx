@@ -44,9 +44,23 @@ export default function Navbar() {
                             <span className="material-symbols-outlined text-lg">login</span>
                             {"Login"}
                         </button>
-                        <button className="bg-[color:var(--color-primary)] text-white px-5 py-2 rounded-lg text-sm font-bold hover:opacity-90 transition-opacity">
+                        {/* Mobile call button */}
+                        <div className="flex md:hidden gap-2">
+                            <a
+                                href={siteConfig.telLink()}
+                                className="bg-[color:var(--color-primary)] text-white p-2 rounded-lg text-sm font-bold flex items-center justify-center hover:opacity-90"
+                            >
+                                <span className="material-symbols-outlined text-[18px]">
+                                    call
+                                </span>
+                            </a>
+                        </div>
+                        <a
+                            href={siteConfig.telLink()}
+                            className="bg-[color:var(--color-primary)] text-white px-5 py-2 rounded-lg text-sm font-bold hover:opacity-90 transition-opacity hidden md:flex"
+                        >
                             Rent Now
-                        </button>
+                        </a>
                         {/* Mobile menu toggle */}
                         <button
                             className="md:hidden text-slate-600"

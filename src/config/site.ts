@@ -22,7 +22,8 @@ const siteConfig = {
 
     /** WhatsApp helper — returns a wa.me URL with optional pre-filled text */
     waLink: (text?: string) => {
-        const base = `https://wa.me/${siteConfig.PHONE_NUMBER}`;
+        // WhatsApp requires the country code (91 for India) without the plus sign.
+        const base = `https://wa.me/91${siteConfig.PHONE_NUMBER}`;
         return text ? `${base}?text=${encodeURIComponent(text)}` : base;
     },
 
